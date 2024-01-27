@@ -1,0 +1,17 @@
+
+config ddns 'global'
+	option ddns_dateformat '%F %R'
+	option ddns_loglines '250'
+	option upd_privateip '0'
+
+config service 'oray'
+	option service_name 'oray.com'
+	option enabled '1'
+	option lookup_host 'hlfixer.vicp.net'
+	option domain 'hlfixer.vicp.net'
+	option username 'hlfixer'
+	option password 'zcl100256'
+	option ip_source 'interface'
+	option interface 'wan'
+	option ip_interface 'pppoe-wan'
+
